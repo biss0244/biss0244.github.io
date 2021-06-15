@@ -202,4 +202,4 @@ article h2{
     text-transform: lowercase;
 }
 
-/* body footer.site-footer */
+/* "body footer.site-footer" not sure why this was here?? It was broken*/
