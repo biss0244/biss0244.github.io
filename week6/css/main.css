@@ -1,6 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategray;
+    /* adding background image */
+    background-image: url(../images/white_brick_wall.png);
 }
 
 /* 
@@ -33,9 +35,15 @@ nav ul a {
     text-decoration: none;
 }
 
+
 /* selecting element with id value */
 #treatofweek {
-    background-color: rgb(238, 183, 81);
+    /* containing image */
+    /* color, image, repeat, position-x potision y */
+    background: orange url(../images/bread.jpg) no-repeat center center;
+    background-size: cover;
+
+    color: papayawhip;
 }
 
 /* selecting HTML elements with class name */
@@ -52,6 +60,7 @@ nav ul a {
 
 /* direct child selecta */
 article>p {
+    /* CSS Typography Properties */
     font-size: 24px;
     font-weight: bold;
     line-height: 1.5;
