@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+/* 
+heeey lookit that we get to make comments on css lessss gooooooooooooooo 
+*/
+
+h1 {
+    color: peru;
+}
+
+p {
+    background-color: rgb(183, 195, 197);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-decoration: underline;
+}
+
+/* selecting child elements */
+nav ul {
+    list-style: none;
+}
+
+/* selecting child elements multiple level */
+nav ul a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+/* selecting element with id value */
+#treatofweek {
+    background-color: rgb(238, 183, 81);
+}
+
+/* selecting HTML elements with class name */
+/* periods for classes, hash sign for IDs */
+.orange-link {
+    background-color: darkslategray;
+    color: orange;
+    text-decoration: none;
+
+}
+
+.large-text {
+    font-size: 20px;
+}
+
+/* direct child selecta */
+article>p {
+    font-size: 24px;
+}
+
+h3+ul {
+    border: 1px solid black
+}
+
+/* child selecta */
+h3~p {
+    text-transform: uppercase;
+
+}
+
+a[href] {
+    color: green;
+}
+
+/* sibling selecta */
+
+h3~p {
+    text-transform: uppercase;
+}
+
+/* attribute selecta */
+
+[href="#treatofweek"] {
+    font-weight: bold;
+}
+
+img[src$=".jpg"] {
+    border: 4px solid black;
+}
+
+/* 
+using pseudo classes 
+styling navigation
+*/
+
+nav ul a,
+nav ul a:link nav ul a:visited {
+    background-color: orange;
+    /*horizontal vertical black spread color */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul .current,
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px rgb(91, 184, 48);
+}
+
+/*position related selectors*/
+/* first-child and last child */
+aside ul li:first-child{
+    font-weight: bold;
+}
+section ol li:last-child{
+    font-weight: bold;
+}
+
+/* styling a table */
+table {
+    border-collapse: collapse;
+}
+
+/* nth-child selector - odd/even keyword */
+tbody tr:nth-child(odd){
+    /*hex color value with 6 characters*/
+    background-color: #d5836c;
+}
+
+/*using the nth-child with n.
+where n is 0,1,2,3.... until number of elements
+*/
+
+table th:nth-child(n),
+table td:nth-child(n){
+    /*hex color value with 3 characters*/
+    border: 1px solid black;
+}
+
+/* using a formula in nth-child selector */
+table td:nth-child(2n+1) {
+    background-color: rgba(red, green, blue, .2);
+}
+
+/* 
+CSS specificity
+formula:
+InlineStyles, ID, Class, Tag-name
+*/
+
+/* 0001 */
+footer {
+    background-color: red;
+}
+
+/* 0002 */
+body footer {
+    background-color: orange;
+}
+
+/* 0001 */
+footer {
+    background-color: blue;
+}
+
+article h2{
+    text-transform: lowercase;
+}
+
+body footer.site-footer
