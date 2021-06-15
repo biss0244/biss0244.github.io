@@ -42,7 +42,7 @@ nav ul a
 
 
 .gang-list li:nth-child(odd) 
-/* This was a pain in the ass, so as an easy way out I make the */
+/* This was a pain in the ass, so as an easy way out I make it a family */
 {
     background-color: darksalmon;
 }

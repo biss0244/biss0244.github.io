@@ -33,6 +33,8 @@ nav ul {
 nav ul a {
     color: darkslategray;
     text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5 x 16 = 24px */
 }
 
 
@@ -44,6 +46,16 @@ nav ul a {
     background-size: cover;
 
     color: papayawhip;
+
+    font-size: 1.25rem;
+    /* 1.25 x 16 = 20px */
+    /* padding: 1em; */
+    /* 1 x 20 - 20px */
+    /* height: 100vh; */
+
+    /*  viewport based unit */
+
+    width: 50%;
 }
 
 /* selecting HTML elements with class name */
@@ -66,10 +78,20 @@ article>p {
     line-height: 1.5;
     text-transform:uppercase;
     text-align: center;
+    /* 1em = 24px */
+    /* 
+    html = 20px
+    1rem = 20px
+    font-size .2rem; .2 x 20 = 4px
+    2em= 4px
+     */
+    
 }
 
 h3+ul {
-    border: 1px solid black
+    font-size: 32px;
+
+    border: 1px solid black;
 }
 
 /* child selecta */
@@ -152,7 +174,7 @@ table td:nth-child(n){
 
 /* using a formula in nth-child selector */
 table td:nth-child(2n+1) {
-    background-color: rgba(red, green, blue, .2);
+    /* background-color: red; */
 }
 
 /* 
@@ -180,4 +202,4 @@ article h2{
     text-transform: lowercase;
 }
 
-body footer.site-footer
+/* body footer.site-footer */
