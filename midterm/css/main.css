@@ -1,0 +1,20 @@
+/* Prof says this will save us a headache, but I don't totally get it */
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *:after{
+    box-sizing: inherit;
+  }
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aad4cf;
+}
+

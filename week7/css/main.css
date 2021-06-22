@@ -3,11 +3,20 @@ body {
     color: darkslategray;
     /* adding background image */
     background-image: url(../images/white_brick_wall.png);
+    /* fixing fixed nav overlap */
+    padding-top: 92px;
 }
 
-/* 
-heeey lookit that we get to make comments on css lessss gooooooooooooooo 
-*/
+/*heeey lookit that we get to make comments on css lets go*/
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Autoresizes images */
+img{
+    width: 100%;
+}
 
 h1 {
     color: peru;
@@ -24,13 +33,24 @@ h4 {
     text-decoration: underline;
 }
 
+
+/* midtermstuff */
 /* selecting child elements */
 nav ul {
     list-style: none;
 }
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
 
 /* selecting child elements multiple level */
 nav ul a {
+    /* next line makes elements block */
+    display: block;
     color: darkslategray;
     text-decoration: none;
     font-size: 1.5rem;
@@ -40,13 +60,14 @@ nav ul a {
 
 /* selecting element with id value */
 #treatofweek {
+    position: relative;
     /* containing image */
     /* color, image, repeat, position-x potision y */
     background: orange url(../images/bread.jpg) no-repeat center center;
     background-size: cover;
 
     color: papayawhip;
-
+    padding: 1em 1em 4em 1em;
     font-size: 1.25rem;
     /* 1.25 x 16 = 20px */
     /* padding: 1em; */
@@ -57,11 +78,22 @@ nav ul a {
 
     width: 50%;
 }
+/* position - absolute */
+/* 0020 */
+.orange-link.large-text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 
 /* selecting HTML elements with class name */
 /* periods for classes, hash sign for IDs */
 .orange-link {
-    background-color: darkslategray;
+    padding: 1.5em;
+    width: 300px;
+    display: block;
+    background-color: rgb(212, 118, 64);
     color: orange;
     text-decoration: none;
 
@@ -70,13 +102,32 @@ nav ul a {
     font-size: 20px;
 }
 
+/* example of float layout */
+article,
+aside {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding:  1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside {
+    width: 20%;
+}
+/* clearing the float from the sections */
+section {
+    clear: both;
+}
+
 /* direct child selecta */
 article>p {
     /* CSS Typography Properties */
     font-size: 24px;
     font-weight: bold;
     line-height: 1.5;
-    text-transform:uppercase;
+    text-transform: lowercase;
     text-align: center;
     /* 1em = 24px */
     /* 
@@ -118,6 +169,16 @@ h3~p {
 
 img[src$=".jpg"] {
     border: 4px solid black;
+}
+
+/* fixed navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999;
 }
 
 /* 
@@ -199,7 +260,19 @@ footer {
 }
 
 article h2{
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 
 /* "body footer.site-footer" not sure why this was here?? It was broken*/
+
+/* CSS box model */
+
+section p {
+    width: 50%;
+    /* top bottom left right */
+    padding: 1em .5em;
+    /* top bottom left right */
+    margin: -1em 2em 2em 2em;
+    /* border */
+    border: 2px solid black;
+}
